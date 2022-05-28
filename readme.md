@@ -1,6 +1,6 @@
 # Prueba NTTData
 
-La prueba es desarrollada por [Carlos Santiago Benitez](https://github.com/angular/angular-cli), haciendo uso de Spring Boot 2.7 y Angular 13
+La prueba es desarrollada por [Carlos Santiago Benitez](https://www.linkedin.com/in/ing-santiago-benitez), haciendo uso de Spring Boot 2.7 y Angular 13
 
 ## Datasource
 
