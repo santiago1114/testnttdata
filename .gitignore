@@ -5,6 +5,7 @@ target/
 !**/src/test/**/target/
 
 ### STS ###
+.angular
 .apt_generated
 .classpath
 .factorypath
