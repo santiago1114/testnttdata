@@ -21,4 +21,4 @@ El proyecto angular está en la rama frontend
 ## Imágenes backend
 
 Pruebas API
-![busqueda](https://github.com/santiago1114/testnttdata/blob/main/detalles.png?raw=true)
+![busqueda](https://github.com/santiago1114/testnttdata/blob/main/api.png?raw=true)
