@@ -1,0 +1,49 @@
+<div
+  class="container d-flex justify-content-center align-items-center main-wrapper"
+>
+  <div class="card p-3">
+    <form (ngSubmit)="onSubmit(form)" #form="ngForm">
+      <div class="mb-3">
+        <label for="tipoDocumento" class="form-label">Tipo de Documento</label>
+        <select
+          class="form-select"
+          aria-label="Tipo de Documento"
+          name="tipoDocumento"
+          ngModel
+          required
+        >
+          <option value="C">Cédula de Ciudadanía</option>
+          <option value="P">Pasaporte</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="numeroDocumento" class="form-label"
+          >Número de Documento</label
+        >
+        <input
+          type="number"
+          class="form-control"
+          id="numeroDocumento"
+          name="numeroDocumento"
+          min="0"
+          minlength="8"
+          maxlength="11"
+          ngModel
+          required
+        />
+      </div>
+      <button
+        [disabled]="!form.form.valid"
+        type="submit"
+        class="btn btn-primary"
+      >
+        Buscar
+      </button>
+    </form>
+  </div>
+</div>
+<style>
+  .main-wrapper {
+    height: 100vh;
+  }
+</style>

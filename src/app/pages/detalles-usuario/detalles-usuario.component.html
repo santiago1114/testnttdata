@@ -1,0 +1,147 @@
+<div
+  class="container d-flex justify-content-center align-items-center main-wrapper"
+>
+  <div class="card p-3">
+    <form (ngSubmit)="onSubmit()" #form="ngForm" *ngIf="usuario; else warn">
+      <div class="row">
+        <div class="col">
+          <div class="mb-3">
+            <label for="tipoDocumento" class="form-label"
+              >Tipo de Documento</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="tipoDocumento"
+              name="tipoDocumento"
+              minlength="11"
+              maxlength="14"
+              [ngModel]="usuario.tipoDocumento"
+              disabled="true"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="numeroDocumento" class="form-label"
+              >Número de Documento</label
+            >
+            <input
+              type="number"
+              class="form-control"
+              id="numeroDocumento"
+              name="numeroDocumento"
+              minlength="11"
+              maxlength="14"
+              [ngModel]="usuario.numeroDocumento"
+              disabled="true"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="primerNombre" class="form-label">Primer Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="primerNombre"
+              name="primerNombre"
+              minlength="11"
+              maxlength="14"
+              [ngModel]="usuario?.primerNombre"
+              disabled="true"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="segundoNombre" class="form-label">Segundo Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="segundoNombre"
+              name="segundoNombre"
+              minlength="11"
+              maxlength="14"
+              [ngModel]="usuario.segundoNombre"
+              disabled="true"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="primerApellido" class="form-label"
+              >Segundo Nombre</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="primerApellido"
+              name="primerApellido"
+              minlength="11"
+              maxlength="14"
+              [ngModel]="usuario.primerApellido"
+              disabled="true"
+            />
+          </div>
+        </div>
+        <div class="col">
+          <div class="mb-3">
+            <label for="segundoApellido" class="form-label"
+              >Segundo Apellido</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="segundoApellido"
+              name="segundoApellido"
+              minlength="11"
+              maxlength="14"
+              [ngModel]="usuario.segundoApellido"
+              disabled="true"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="telefono" class="form-label">Telefono</label>
+            <input
+              type="number"
+              class="form-control"
+              id="telefono"
+              name="telefono"
+              minlength="11"
+              maxlength="14"
+              [ngModel]="usuario.telefono"
+              disabled="true"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="direccion" class="form-label">Dirección</label>
+            <input
+              type="text"
+              class="form-control"
+              id="direccion"
+              name="direccion"
+              minlength="11"
+              maxlength="14"
+              [ngModel]="usuario.direccion"
+              disabled="true"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="ciudadResidencia" class="form-label">Ciudad de Residencia</label>
+            <input
+              type="text"
+              class="form-control"
+              id="ciudadResidencia"
+              name="ciudadResidencia"
+              minlength="11"
+              maxlength="14"
+              [ngModel]="usuario.ciudadResidencia"
+              disabled="true"
+            />
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Ir Atrás</button>
+    </form>
+    <ng-template #warn> No se encontro el usuario </ng-template>
+  </div>
+</div>
+<style>
+  .main-wrapper {
+    height: 100vh;
+  }
+</style>
