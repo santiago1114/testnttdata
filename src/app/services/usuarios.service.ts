@@ -14,7 +14,7 @@ export class UsuariosService {
   constructor(private http: HttpClient) { }
 
   getUsuario(form: NgForm){
-    return this.http.get<UsuarioModel>(`http://localhost:8080/api/usuarios/get?tipoDocumento=${form.value.tipoDocumento}&numeroDocumento=${form.value.numeroDocumento}`)
+    return this.http.get<UsuarioModel>(`http://localhost:8090/api/usuarios/get?tipoDocumento=${form.value.tipoDocumento}&numeroDocumento=${form.value.numeroDocumento}`)
   }
 
 }
